@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../hotel_website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hotel_website"
+	}
+}

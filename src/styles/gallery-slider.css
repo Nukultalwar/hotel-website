@@ -1,0 +1,95 @@
+.gallery-slider {
+  margin: 0 -8px;
+  padding: 0 32px;
+}
+
+.gallery-slider .slick-slide {
+  padding: 0 8px;
+}
+
+.gallery-slider .slick-dots {
+  bottom: -40px;
+}
+
+.gallery-slider .slick-dots li button:before {
+  font-size: 12px;
+  color: #2563eb;
+  opacity: 0.25;
+}
+
+.gallery-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #2563eb;
+}
+
+.gallery-slider .slick-prev,
+.gallery-slider .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.gallery-slider .slick-prev {
+  left: -8px;
+}
+
+.gallery-slider .slick-next {
+  right: -8px;
+}
+
+.gallery-slider .slick-prev:before,
+.gallery-slider .slick-next:before {
+  font-size: 40px;
+  color: #2563eb;
+  opacity: 0.75;
+}
+
+.gallery-slider .slick-prev:hover:before,
+.gallery-slider .slick-next:hover:before {
+  opacity: 1;
+}
+
+/* Modal Animation Styles */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalBackdropFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fixed.inset-0 {
+  animation: modalBackdropFadeIn 0.3s ease-out;
+}
+
+.fixed.inset-0 .max-w-7xl {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+.gallery-slider .glass-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-slider .glass-card:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-slider .glass-card img {
+  transition: transform 0.7s ease-in-out;
+}
+
+.gallery-slider .glass-card:hover img {
+  transform: scale(1.1);
+} 
