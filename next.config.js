@@ -1,10 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
   images: {
-    domains: ['images.unsplash.com', 'www.tajhotels.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.tajhotels.com',
+      },
+    ],
     unoptimized: false,
   },
+
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -17,6 +28,9 @@ const nextConfig = {
     config.externals = [...(config.externals || []), { canvas: 'canvas' }]
     return config
   },
+
+  turbopack: {},
 }
 
 module.exports = nextConfig
+
