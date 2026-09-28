@@ -21,26 +21,27 @@ export default function Home() {
   const roomCategories = [
     {
       name: 'Normal Room',
+
       price: '$12/night',
-      image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800',
+      image: 'https://picsum.photos/800/600?random=1',
       features: ['Comfortable bed', 'Modern amenities', 'City view'],
     },
     {
       name: 'High Class Room',
       price: '$50/night',
-      image: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800',
+image: 'https://picsum.photos/800/600?random=2',
       features: ['Premium bedding', 'Mini bar', 'Balcony'],
     },
     {
       name: 'Luxury Suite',
       price: '$200/night',
-      image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800',
+image: 'https://picsum.photos/800/600?random=3',
       features: ['Separate living area', 'Jacuzzi', 'Butler service'],
     },
     {
       name: 'Master Room',
       price: '$400/night',
-      image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800',
+image: 'https://picsum.photos/800/600?random=4',
       features: ['Presidential suite', 'Private pool', '24/7 concierge'],
     },
   ]
